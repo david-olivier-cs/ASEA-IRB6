@@ -1,0 +1,9 @@
+[Unit]
+Description=Launches the ASEA robot control script
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/ubuntu/ASEA-irb6/main.py /home/ubuntu/ASEA-irb6/config.json
+
+[Install]
+WantedBy=multi-user.target
